@@ -8,10 +8,9 @@ import (
 import pb "github.com/hyperledger/fabric/protos/peer"
 
 type recordInfo struct {
-	UserId            string   `json:"UserId"`
-	FileSpecification string   `json:"FileSpecification"`
-	FileTime          string   `json:"FileTime"`
-	FileHash          []string `json:"FileHash"`
+	Identity string   `json:"identity"`
+	SickName string   `json:"sickName"`
+	DrugName []string `json:"drugName"`
 }
 
 type resultData struct {
